@@ -6,9 +6,9 @@ const Footer = () => {
         <footer>
             <h2>Views From Nasa</h2>
             <ul>
-                <a href="#">Item 1</a>
-                <a href="#">Item 2</a>
-                <a href="#">Item 3</a>
+                <button href="#">Item 1</button>
+                <button href="#">Item 2</button>
+                <button href="#">Item 3</button>
             </ul>
         </footer>
     );
