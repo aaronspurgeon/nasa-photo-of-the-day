@@ -1,12 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-const Landing = () => {
+const Landing = (props) => {
+    const urlStyle = {
+        width: '400px',
+        height: '300px'
+    }
+    
     
     return (
         <section>
-            <h1>Title</h1>
-            <img src="#" alt="awesome pic of space"/>
-            <p>Description</p>
+            <h1>{props.title}<span>{props.date}</span></h1>
+            {
+                props.media_type === "video"
+                    ? <iframe title="nasaVideo" style={urlStyle} src={props.url}></iframe>
+                    : <img src={props.url} alt="awesome pic of space"/>
+            }
+            <p>{props.explanation}</p>
         </section>
     );
 };
