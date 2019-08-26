@@ -7,22 +7,26 @@ import Footer from "./Components/Footer/Footer";
 
 function App() {
   // logic here from useEffect using axios to obtain the nasa information
-  const [data, setData] = useState();
+  const [data, setData] = useState({});
+  
   
     
     useEffect(() => {
       const fetchData = () => {
         axios
           .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")  
-          .then(res => setData(res.data));
+          .then(res => setData(res.data))
+          
       }
         fetchData();
-        console.log(data);
+        
     }, []);
   return (
     <div className="App">
       <Navigation />
-      <Landing data={data}/>
+      <Landing
+          data={data}
+       />
       <Footer />
     </div>
   );
