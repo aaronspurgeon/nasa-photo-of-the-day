@@ -23,6 +23,7 @@ const H2 = styled.h2`
     font-size: 2rem;
     font-weight: 200;
     color: white;
+    margin-left: 20px;
 `
 const Wrapper = styled.div`
     width: auto;
