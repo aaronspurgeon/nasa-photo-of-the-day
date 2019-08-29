@@ -14,7 +14,7 @@ const Landing = (props) => {
             {
                 props.data.media_type === "video"
                     ? <iframe title="nasaVideo" style={urlStyle} src={props.data.url}></iframe>
-                    : <img src={props.data.url} alt="awesome pic of space"/>
+                    : <img style={urlStyle} src={props.data.url} alt="awesome pic of space"/>
             }
             <p>{props.data.explanation}</p>
         </section>
