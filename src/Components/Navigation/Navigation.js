@@ -20,7 +20,8 @@ const H2 = styled.h2`
 `
 const Wrapper = styled.div`
     width: auto;
-    height: 10vh;
+    height: 5vh;
+    margin-bottom: 40px;
 `
 
 

@@ -6,6 +6,7 @@ import ReadMoreReact from "read-more-react";
 const Wrapper = styled.section`
     width: auto;
     height: 90vh;
+    margin-bottom: 40px;
 `
 
 const LandingH1 = styled.h1`
@@ -24,14 +25,24 @@ const ImageWrapper = styled.div`
     justify-content: center;
 `
 
+const Info = styled.p`
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 300;
+    word-spacing: 2px;
+`
+
+const InfoWrapper = styled.div`
+    width: 80%;
+    margin: 0 auto;
+`
+
 const Landing = (props) => {
     const urlStyle = {
-        width: '900px',
-        height: '600px'
+        width: '1200px',
+        height: '600px',
+        marginBottom: '40px'
     }
-    
-    const text = props.data.explanation;
-    console.log(text);
     
     return (
         <Wrapper>
@@ -43,9 +54,9 @@ const Landing = (props) => {
                         : <img style={urlStyle} src={props.data.url} alt="awesome pic of space"/>
                 }
             </ImageWrapper>
-            
-            <p>{text}</p>
-            
+            <InfoWrapper>
+                <Info>{props.data.explanation}</Info>
+            </InfoWrapper>
         </Wrapper>
     );
 };

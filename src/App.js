@@ -7,9 +7,9 @@ import Landing from "./Components/Landing/Landing";
 import Footer from "./Components/Footer/Footer";
 
 const Wrapper = styled.div`
-  width: 1500px;
-  margin: 0 auto;
-  padding: 2%;
+  /* width: 1500px;
+  margin: 0 auto; */
+  padding: 5%;
 `
 
 function App() {
